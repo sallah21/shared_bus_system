@@ -8,6 +8,8 @@
 `include "../tv80_lib/8085_instr_set.v"
 module EX1_tb;
 
+// BFM or CPU def
+`define BFM
 //Internal signals declarations:
 reg CLK;
 reg nCLR;
@@ -45,6 +47,7 @@ wire [2:0] TS;
 // 	.nWAIT(nWAIT),
 // 	.nM1(nM1),
 // 	.TS(TS));
+`ifdef BFM
 BFM BFM_inst (
 	.CLK(CLK),
     .CE(CE),
@@ -62,7 +65,7 @@ BFM BFM_inst (
     .nWR(nWR),
     .TS(TS)
 );
-
+`endif 
 // IO IO_inst (
 //     .nWR(nWR),      
 //     .nIORQ(nIORQ),    
@@ -82,7 +85,7 @@ IO IO_inst (
 
 
 TIMER #(
-	.MAX_VAL(16'd400)
+	.MAX_VAL(16'd05)
 ) TIMER_inst (
 	.CLK(CLK),
     .RSTn(nCLR),
@@ -120,39 +123,43 @@ end
 assign nWAIT = 1'b1; //No WAIT - Run with full speed
 
 reg [23:0] MAIN_STOP;
-// initial begin
-// 	CE = 0;
-// 	nCLR = 0;
-// 	nINT = 1;
-// 	nBUSRQ = 1'b1;
-// 	WAIT(5);
-// 	nBUSRQ = 1'b0;
-// 	nCLR = 1;
-// 	WAIT(5);
-// 	// Feeding memory with operations 
-// 	M0.WR_MEM(`LXI_SP); M0.WR_MEM_W(16'h800); //Initialize memory 
-// 	M0.WR_MEM(`MVI_A); M0.WR_MEM(8'd12);
-// 	M0.WR_MEM(`DAD_H); //RES = 2RES
-// 	M0.WR_MEM(`RLC);
-// 	WAIT(5);
-// 	CE = 1;
-// 	WAIT(50);
-// 	// nBUSRQ = 1'b0;
-// 	nINT = 0;
-// 	WAIT(3);
-// 	nBUSRQ = 1'b1;
-// 	nINT = 1;
-// 	WAIT(50);
-// 	WAIT(50);
-// 	nINT = 0;
-// 	WAIT(3);
-// 	nINT = 1;
-// 	WAIT(50);
-// 	$display("@%d: Simulation completed.", $time);
-// 	$finish;
-// end 
+`ifdef CPU
+initial begin
+	CE = 0;
+	nCLR = 0;
+	nINT = 1;
+	nBUSRQ = 1'b1;
+	WAIT(5);
+	nBUSRQ = 1'b0;
+	nCLR = 1;
+	WAIT(5);
+	// Feeding memory with operations 
+	M0.WR_MEM(`LXI_SP); M0.WR_MEM_W(16'h800); //Initialize memory 
+	M0.WR_MEM(`MVI_A); M0.WR_MEM(8'd12);
+	M0.WR_MEM(`DAD_H); //RES = 2RES
+	M0.WR_MEM(`RLC);
+	WAIT(5);
+	CE = 1;
+	WAIT(50);
+	// nBUSRQ = 1'b0;
+	nINT = 0;
+	WAIT(3);
+	nBUSRQ = 1'b1;
+	nINT = 1;
+	WAIT(50);
+	WAIT(50);
+	nINT = 0;
+	WAIT(3);
+	nINT = 1;
+	WAIT(50);
+	$display("@%d: Simulation completed.", $time);
+	$finish;
+end 
+`endif 
+
 reg [ 15:0] ADDR_r = 16'd0;
 reg [7:0] DQ_r;
+`ifdef BFM
 initial begin
 	CE = 0;
 	nCLR = 0;
@@ -213,6 +220,7 @@ initial begin
 	$display("@%d: Simulation completed.", $time);
 	$finish;
 end 
+`endif 
 
 initial begin
 	$dumpfile("ex1.vcd");
