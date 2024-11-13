@@ -1,0 +1,38 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Tue Oct 10 21:15:51 2023
+[*]
+[dumpfile] "/Users/salsamon/ASIC/Metody_Komunikacji_w_Systemach_Cyfrowych/Lab_1/lab_1"
+[dumpfile_mtime] "Tue Oct 10 21:12:00 2023"
+[dumpfile_size] 110418
+[savefile] "/Users/salsamon/ASIC/Metody_Komunikacji_w_Systemach_Cyfrowych/Lab_1/lab_1/ex1.gtkw"
+[timestart] 0
+[size] 1533 826
+[pos] -1 -1
+*-16.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] EX1_tb.
+[sst_width] 211
+[signals_width] 110
+[sst_expanded] 1
+[sst_vpaned_height] 222
+@28
+EX1_tb.CLK
+EX1_tb.nCLR
+EX1_tb.CE
+@22
+EX1_tb.ADDR[15:0]
+EX1_tb.DQ[7:0]
+@28
+EX1_tb.TS[2:0]
+EX1_tb.nWAIT
+EX1_tb.nMREQ
+EX1_tb.nIORQ
+EX1_tb.nM1
+EX1_tb.nRD
+EX1_tb.nWR
+@29
+EX1_tb.nINT
+@28
+EX1_tb.RAM_4K_CS
+[pattern_trace] 1
+[pattern_trace] 0

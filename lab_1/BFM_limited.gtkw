@@ -1,0 +1,74 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Nov  6 14:29:42 2024
+[*]
+[dumpfile] "/home/student/Documents/DS/S2/Metody_komunikacji_cyfrowej/Lab_1/Lab_1/lab_1/ex1.vcd"
+[dumpfile_mtime] "Wed Nov  6 14:29:21 2024"
+[dumpfile_size] 6636
+[savefile] "/home/student/Documents/DS/S2/Metody_komunikacji_cyfrowej/Lab_1/Lab_1/lab_1/BFM_limited.gtkw"
+[timestart] 0
+[size] 1848 1016
+[pos] -1 -1
+*-15.918507 87400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[markername] AA
+[markername] BB
+[markername] CC
+[markername] DD
+[markername] EE
+[markername] FF
+[markername] GG
+[markername] HH
+[markername] II
+[markername] JJ
+[markername] KK
+[markername] LL
+[markername] MM
+[markername] NN
+[markername] OO
+[markername] PP
+[markername] QQ
+[markername] RR
+[markername] SS
+[markername] TT
+[markername] UU
+[markername] VV
+[markername] WW
+[markername] XX
+[markername] YY
+[markername] ZZ
+[treeopen] EX1_tb.
+[sst_width] 253
+[signals_width] 174
+[sst_expanded] 1
+[sst_vpaned_height] 316
+@22
+EX1_tb.ADDR[15:0]
+EX1_tb.ADDR_r[15:0]
+EX1_tb.BFM_inst.ADDR[15:0]
+EX1_tb.BFM_inst.ADDR_r[15:0]
+@28
+EX1_tb.BFM_inst.CLK
+@24
+EX1_tb.BFM_inst.TS[2:0]
+@28
+EX1_tb.BFM_inst.nBUSAK
+EX1_tb.BFM_inst.nBUSRQ
+EX1_tb.BFM_inst.nCLR
+EX1_tb.BFM_inst.nINT
+EX1_tb.BFM_inst.nIORQ
+EX1_tb.BFM_inst.nM1
+EX1_tb.BFM_inst.nMREQ
+EX1_tb.BFM_inst.nRD
+EX1_tb.BFM_inst.nWAIT
+EX1_tb.BFM_inst.nWR
+@22
+EX1_tb.IO_inst.DQ[7:0]
+EX1_tb.IO_inst.internal_data[7:0]
+@28
+EX1_tb.IO_inst.nIORQ
+EX1_tb.IO_inst.nRD
+EX1_tb.IO_inst.nWR
+EX1_tb.IO_inst.rd_en
+EX1_tb.IO_inst.wr_en
+[pattern_trace] 1
+[pattern_trace] 0

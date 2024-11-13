@@ -1,0 +1,94 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Tue Nov  5 19:02:29 2024
+[*]
+[dumpfile] "/Users/salsamon/ASIC/Metody_Komunikacji_w_Systemach_Cyfrowych/Lab_1/lab_1/ex1.vcd"
+[dumpfile_mtime] "Tue Nov  5 19:01:33 2024"
+[dumpfile_size] 3261
+[savefile] "/Users/salsamon/ASIC/Metody_Komunikacji_w_Systemach_Cyfrowych/Lab_1/lab_1/BFM.gtkw"
+[timestart] 0
+[size] 1680 1050
+[pos] -1 -26
+*-17.000000 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[sst_width] 253
+[signals_width] 136
+[sst_expanded] 1
+[sst_vpaned_height] 316
+@22
+EX1_tb.ADDR[15:0]
+EX1_tb.ADDR_r[15:0]
+EX1_tb.BFM_inst.ADDR[15:0]
+EX1_tb.BFM_inst.ADDR_r[15:0]
+@28
+EX1_tb.BFM_inst.CE
+EX1_tb.BFM_inst.CLK
+@22
+EX1_tb.BFM_inst.D[7:0]
+EX1_tb.BFM_inst.FETCH.ADDR[15:0]
+EX1_tb.BFM_inst.FETCH.D[7:0]
+EX1_tb.BFM_inst.INTERRUPT.ADDR[15:0]
+EX1_tb.BFM_inst.INTERRUPT.D[7:0]
+EX1_tb.BFM_inst.IOR.ADDR[15:0]
+EX1_tb.BFM_inst.IOR.D[7:0]
+EX1_tb.BFM_inst.IOW.ADDR[15:0]
+EX1_tb.BFM_inst.IOW.D[7:0]
+EX1_tb.BFM_inst.MEMRD.ADDR[15:0]
+EX1_tb.BFM_inst.MEMRD.D[7:0]
+EX1_tb.BFM_inst.MEMWR.ADDR[15:0]
+EX1_tb.BFM_inst.MEMWR.D[7:0]
+@28
+EX1_tb.BFM_inst.TS[2:0]
+EX1_tb.BFM_inst.TS_r[2:0]
+EX1_tb.BFM_inst.nBUSAK
+EX1_tb.BFM_inst.nBUSAK_r
+EX1_tb.BFM_inst.nBUSRQ
+EX1_tb.BFM_inst.nCLR
+EX1_tb.BFM_inst.nINT
+EX1_tb.BFM_inst.nIORQ
+EX1_tb.BFM_inst.nIORQ_r
+EX1_tb.BFM_inst.nM1
+EX1_tb.BFM_inst.nM1_r
+EX1_tb.BFM_inst.nMREQ
+EX1_tb.BFM_inst.nMREQ_r
+EX1_tb.BFM_inst.nRD
+EX1_tb.BFM_inst.nRD_r
+EX1_tb.BFM_inst.nWAIT
+EX1_tb.BFM_inst.nWR
+EX1_tb.BFM_inst.nWR_r
+EX1_tb.CE
+EX1_tb.CLK
+@22
+EX1_tb.DQ[7:0]
+EX1_tb.DQ_r[7:0]
+EX1_tb.M0.ASSIGN_LABEL.LABEL[23:0]
+EX1_tb.M0.A[11:0]
+EX1_tb.M0.DQ[7:0]
+EX1_tb.M0.INIT_MEM.DATA[7:0]
+EX1_tb.M0.INSERT.DATA[15:0]
+EX1_tb.M0.INSERT.IDX[15:0]
+EX1_tb.M0.LABEL_r[23:0]
+EX1_tb.M0.WR_MEM.DATA[7:0]
+EX1_tb.M0.WR_MEM_W.DATA[15:0]
+@28
+EX1_tb.M0.nCS
+EX1_tb.M0.nOE
+EX1_tb.M0.nWE
+@420
+EX1_tb.M0.wr_addr
+@28
+EX1_tb.RAM_4K_CS
+EX1_tb.TS[2:0]
+@22
+EX1_tb.WAIT.dy[31:0]
+@28
+EX1_tb.nBUSRQ
+EX1_tb.nCLR
+EX1_tb.nINT
+EX1_tb.nIORQ
+EX1_tb.nM1
+EX1_tb.nMREQ
+EX1_tb.nRD
+EX1_tb.nWAIT
+EX1_tb.nWR
+[pattern_trace] 1
+[pattern_trace] 0
